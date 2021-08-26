@@ -2,7 +2,8 @@
 
 #### 연도별 로그인 수 조회
 http://localhost:8031/login/year?year=21
-![image](https://user-images.githubusercontent.com/65826145/130973688-8a3ab25e-51c5-48cd-8ef8-4725d8bd569e.png){:.alignleft}
+![image](https://user-images.githubusercontent.com/65826145/130973688-8a3ab25e-51c5-48cd-8ef8-4725d8bd569e.png)
+
 
 #### 월별 로그인 수 조회
 > http://localhost:8031/login/month?month=08
@@ -26,5 +27,6 @@ http://localhost:8031/login/year?year=21
 
 #### Database
 > ![image](https://user-images.githubusercontent.com/65826145/130974444-5db533b9-9dbd-47cd-97fc-6db67fd65c03.png)
-> ![image](https://user-images.githubusercontent.com/65826145/130974527-5515540d-3d5b-4aaa-a292-4f157034cc9c.png)
+> ![image](https://user-images.githubusercontent.com/65826145/130977674-59995b03-1687-4c0d-8382-c114514b13a2.png){: width="50" height="50"}
+
 
