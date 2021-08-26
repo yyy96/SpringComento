@@ -25,7 +25,6 @@
    ![image](https://user-images.githubusercontent.com/65826145/130974333-a37080cd-7337-4e18-ba15-fd1831923d6d.png)
 
 + Database
-```
-  ![image](https://user-images.githubusercontent.com/65826145/130974444-5db533b9-9dbd-47cd-97fc-6db67fd65c03.png)
-  ![image](https://user-images.githubusercontent.com/65826145/130974527-5515540d-3d5b-4aaa-a292-4f157034cc9c.png)
-```
+> ![image](https://user-images.githubusercontent.com/65826145/130974444-5db533b9-9dbd-47cd-97fc-6db67fd65c03.png)
+> ![image](https://user-images.githubusercontent.com/65826145/130974527-5515540d-3d5b-4aaa-a292-4f157034cc9c.png)
+
