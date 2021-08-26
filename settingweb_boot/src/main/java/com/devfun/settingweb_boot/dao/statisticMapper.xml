@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.devfun.settingweb_boot.dao.StatisticMapper">
+ 
+ 
+    <select id="selectYearLogin" parameterType="string" resultType="hashMap">
+        select count(*) as totCnt
+        from statistc.requestinfo ri
+        where left(ri.createDate, 2) = #{year};
+    </select>
+    
+    
+    <select id="selectMonthLogin" parameterType="string" resultType="hashMap">
+        select count(*) as totCnt
+        from statistc.requestinfo ri
+        where mid(ri.createDate, 3, 2) = #{month};
+    </select>
+    
+    
+    <select id="selectDayLogin" parameterType="string" resultType="hashMap">
+        select count(*) as totCnt
+        from statistc.requestinfo ri
+        where left(ri.createDate, 2) = #{year}
+        and mid(ri.createDate, 3, 2) = #{month}
+        and mid(ri.createDate, 5, 2) = #{day};
+    </select>
+    
+    
+    <select id="selectAverageLogin" parameterType="string" resultType="hashMap">
+        select avg(totCnt)
+        from(
+          select count(*) totCnt
+          from statistc.requestinfo
+          group by createDate
+        ) as totAvg;
+    </select>
+    
+    
+     <select id="selectnotHolidayLogin" parameterType="string" resultType="hashMap">
+        select avg(totCnt)
+        from(
+          select count(*) totCnt
+          from statistc.requestinfo ri
+          group by createDate and mid(ri.createDate, 7, 2) !='06'
+        ) as totAvg;
+    </select>
+    
+    
+    <select id="selectorganMonthLogin" parameterType="string" resultType="hashMap">
+        select count(*) as totCnt
+        from  statistc.requestinfo ri, statistc.user
+        where ri.userID = user.userID
+        and HR_ORGAN = #{organ}
+        and mid(ri.createDate,3,2) = #{month};
+    </select>
+    
+</mapper>
+
+
+<!-- SELECT * FROM statistc.requestinfo; -->
