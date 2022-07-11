@@ -1,4 +1,4 @@
-## SpringComento
+## Spring Statistics Project
 
 #### [1주차](https://github.com/yyy96/SpringComento/tree/main/settingweb)
 > spring 환경설정
